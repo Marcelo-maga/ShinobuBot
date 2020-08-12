@@ -12,6 +12,7 @@ module.exports.run = async (client, message, args) => {
                 message.reply("Não estou vendo seu cargo!");
             } else if (member.hasPermission(['KICK_MEMBERS', 'BAN_MEMBERS', 'ADMINISTRATOR'])) {
                 message.reply("Não estou vendo seu cargo!");
+                
             }
         })
     }
