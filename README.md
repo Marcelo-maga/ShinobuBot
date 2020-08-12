@@ -15,6 +15,7 @@ Comandos: <p>
 ;avatar - Envia do avatar do usuario <p>
 ;repo - Envia o link do repositorio <p>
 ;kick - Kick o usuário marcado <p>
+;ban - Bani o usuário marcado <p>
 
 
 Versão 1.0 do bot rodando sem problemas.
