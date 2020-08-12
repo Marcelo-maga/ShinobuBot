@@ -35,40 +35,5 @@ fs.readdir('./events/', (err, files) => {
 	})
 });
 
-//novos membros merecem amor
-client.on("guildMemberAdd", async (member) => { 
-	let guild = await client.guilds.cache.get("430154076198535168");
-	let channel = await client.channels.cache.get("617155794827477003");
-	if (guild != member.guild) {
-	  return console.log("Sem boas-vindas pra você! Sai daqui saco pela.");
-	 } else {
-		let embed = await new Discord.MessageEmbed()
-		.setColor("#7c2ae8")
-		.setTitle(`Boas-vindas, ${member.user.tag}`)
-		.setDescription(`Peça ajuda em ${prefix}help`)
-		.setImage("https://imgur.com/KiOx0Za.gif")
-		.setTimestamp();
-		channel.send(embed);
-	}
-  });
-
-//status do bot
-client.on("ready", () => {
-	let activities = [
-		`o Araragi morrer`,
-		`os donuts fritarem`,
-		`os peitos da Hanekawa balançarem`,
-		`Peça ajuda em ${prefix}help`,
-		`Meu programador é vagabundo!`,
-		`Mande um beijo em ${prefix}kiss`
-	],
-		i = 0;
-	setInterval(() => client.user.setActivity(`${activities[i++ %
-		activities.length]}`, {
-		type: "WATCHING"
-	}), 1000 * 60);
-	client.user
-		.setStatus("online")
-});
 
 client.login(process.env.CLIENT_TOKEN)
