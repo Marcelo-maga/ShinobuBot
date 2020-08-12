@@ -8,8 +8,8 @@ exports.run = async (client, message, args) => {
 
   let embed = new Discord.MessageEmbed() 
     .setColor(`#FFFF00`) 
-    .setTitle(`Avatar do ${user.username}`) 
+    .setTitle(`O lindo avatar do ${user.username}`) 
     .setImage(avatar)
- await message.channel.send(embed); 
+    await message.channel.send(embed); 
 
 };

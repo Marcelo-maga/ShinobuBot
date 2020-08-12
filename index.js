@@ -19,7 +19,7 @@ client.on('message', message => {
 	const command = args.shift().toLowerCase();
 
 	try {
-		const commandFile = require(`./commands/${command}.js`)
+		const commandFile = require(`./commands/${command}.js`);
 		commandFile.run(client, message, args);
 	} catch (err) {
 		console.error('Erro:' + err);
@@ -48,8 +48,7 @@ client.on("guildMemberAdd", async (member) => {
 		.setDescription(`Peça ajuda em ${prefix}help`)
 		.setImage("https://imgur.com/KiOx0Za.gif")
 		.setTimestamp();
-  
-	  channel.send(embed);
+		channel.send(embed);
 	}
   });
 

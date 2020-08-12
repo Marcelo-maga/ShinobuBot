@@ -16,7 +16,8 @@ exports.run = async (client, message, args) => {
         {name:`${prefix}kiss`, value:`Manda um beijinho :heart:`},
         {name:`${prefix}repo`, value:`Envia meu repositorio no GitHub :keyboard:`},
         {name:`${prefix}say`, value:`Falo oque você quiser :joy:`},
-        {name:`${prefix}kick`, value:`Vamos chutar todos eles!`}
+        {name:`${prefix}kick`, value:`Vamos chutar todos eles!`},
+        {name: `${prefix}ban`, value:`Banimento rápido e fácil`}
       )
       helpEmbed.setTimestamp();
 
